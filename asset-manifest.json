@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/candy-deliv/static/css/main.a26e7b4d.css",
-    "main.js": "/candy-deliv/static/js/main.e88c8cdc.js",
-    "index.html": "/candy-deliv/index.html",
-    "main.a26e7b4d.css.map": "/candy-deliv/static/css/main.a26e7b4d.css.map",
-    "main.e88c8cdc.js.map": "/candy-deliv/static/js/main.e88c8cdc.js.map"
+    "main.css": "/candy-deliver/static/css/main.a26e7b4d.css",
+    "main.js": "/candy-deliver/static/js/main.400a5e35.js",
+    "index.html": "/candy-deliver/index.html",
+    "main.a26e7b4d.css.map": "/candy-deliver/static/css/main.a26e7b4d.css.map",
+    "main.400a5e35.js.map": "/candy-deliver/static/js/main.400a5e35.js.map"
   },
   "entrypoints": [
     "static/css/main.a26e7b4d.css",
-    "static/js/main.e88c8cdc.js"
+    "static/js/main.400a5e35.js"
   ]
 }
