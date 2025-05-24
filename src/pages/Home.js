@@ -1,13 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<style>
+  {`
+    @media (max-height: 600px) {
+      html, body {
+        height: auto;
+        overflow-y: scroll;
+      }
+    }
+  `}
+</style>
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen bg-gradient-to-br from-green-900 via-emerald-700 to-lime-600 flex items-center justify-center px-4">
-      <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl shadow-xl p-10 max-w-3xl w-full animate-fade-in">
+  <div className="min-h-screen w-full bg-gradient-to-br from-green-900 via-emerald-700 to-lime-600 flex items-center justify-center px-4 py-10 sm:py-20">
+      <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-3xl shadow-xl p-6 sm:p-8 md:p-10 max-w-3xl w-full animate-fade-in">
 
         <header className="text-center mb-8">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight drop-shadow-lg">
             🌿 SeekoSeeko Inc.
           </h1>
           <p className="text-green-100 mt-4 text-lg md:text-xl font-light">

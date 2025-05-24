@@ -63,8 +63,8 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-300 via-green-500 to-lime-600 p-4">
-      <div className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl w-full max-w-lg p-10 text-white">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-green-300 via-green-500 to-lime-600 px-4 py-10 sm:py-20">
+      <div className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl w-full max-w-lg px-4 py-6 sm:px-6 sm:py-8 md:p-10 text-white">
         <h2 className="text-4xl font-extrabold text-center mb-8 tracking-tight">🌿 Welcome Back</h2>
 
         {error && (
@@ -101,7 +101,7 @@ export default function Login() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-3 rounded-lg font-bold transition ${
+            className={`w-full py-3 rounded-lg font-bold text-sm sm:text-base transition ${
               loading
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-lime-500 hover:bg-lime-600"
@@ -109,6 +109,7 @@ export default function Login() {
           >
             {loading ? "Logging in..." : "Log In"}
           </button>
+
         </form>
 
         <div className="my-6 flex items-center gap-4">
@@ -146,3 +147,13 @@ export default function Login() {
     </div>
   );
 }
+<style>
+  {`
+    @media (max-height: 600px) {
+      html, body {
+        height: auto;
+        overflow-y: scroll;
+      }
+    }
+  `}
+</style>
